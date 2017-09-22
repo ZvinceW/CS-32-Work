@@ -1,0 +1,14 @@
+2. 
+The program has a compilation error because the single argument version of the insert function tries to sort the inserted item. Since we did not define comparison operator for the Complex class, the program does not know how to compare the size and sort the Complex objects passed into the function.
+
+4.
+a.
+The time complexity of this function is O(N^3). This is the time complexity because the algorithm is basically a triple nested loop and that would lead to a time complexity of N^3. (N iterations of the outer most loop)*(N iterations of the middle nested loop)*(N interations of the inner most nested loop) = N^3.
+b.
+The time complexity for this modified function is still O(N^3). In the worst case scenario the middle nested loop would still run for N times, which results in a time complexity of O(N^3).
+
+5.
+a.
+The time complexity for this function would be O(N^2). Since the function consists of two for loops that each call some constant numbers of get and insert functions and the get and insert functions both have O(N), then the time complexity of each for loop in interleave is just O(N*CN) where C is some constant. since we can ignore the constant, the time complexity for each loop is just O(N^2). The combined complexity of two of these loops are O(2N^2), which is still O(N^2).
+b.
+The time complexity of this modified version of the function is O(N). This is because the two for loops inside this function no longer call another function that have a time complexity of O(N), therefore the time complexity for each loop is just O(N). The total complexity of the whole function is O(2N), which simplifies to O(N).

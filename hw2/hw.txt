@@ -1,0 +1,28 @@
+Problem 2:
+6, 4
+6, 3
+6, 5
+7, 5
+8, 5
+8, 6
+8, 7
+8, 8
+7, 8
+6, 6
+5, 4
+4, 4
+
+Problem 4:
+6, 4
+5, 4
+6, 5
+6, 3
+4, 4
+6, 6
+7, 5
+3, 4
+4, 5
+8, 5
+2, 4
+4, 6
+-These two algorithms differ in that mazestack visits the latest cell recorded, while mazequeue visits the earliest cell recorded. In practice, mazestack follows a valid path in the maze until it hits a wall and then starts to follow another path. Mazequeue would simply record all visitable cells until it has recorded the destination cell. This difference exist because of the way stack and queue work. A stack always reads/pops off the last item in the list, while a queue always reads/pops off the first item in the list. Both stacks and queues add new items to the end of the list.
