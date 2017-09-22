@@ -1,0 +1,17 @@
+N = total lines of map data
+A = total number of attractions
+
+MyMap: 
+associate() O(N)
+find() O(1)
+
+AttractionMapper: 
+init() O(N+A*log(A))
+getGeoCoord() O(log(A))
+
+SegmentMapper: 
+init() O((N+A)*log(N+A))
+getSegments() O(log(N+A))
+
+Navigator: 
+navigate() O(log(A) + log(N) + (N+A)log(N+A))
